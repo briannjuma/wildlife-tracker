@@ -8,11 +8,22 @@
         <title>{{#block "title"}}Wildlife-Tracker{{/block}}</title>
     </head>
     <body>
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a class="active" href="/">Home</a></li>
 
+        </ul>
 
+        <div class="container">
+            <div class="page-header"></div>
+            <div class="col-md-12">
+                {{#block "content"}}
+                    {{/block}}
+            </div>
+        </div>
+            {{#block "footer"}}
+                    <style>
+
+                    </style>
     </body>
-
-        <style>
-
-        </style>
 </html>
+            {{/block}}
