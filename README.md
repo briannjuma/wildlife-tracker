@@ -1,5 +1,5 @@
 # wildlife-tracker
-<p><img src=""></p>
+<p align="center"><img src="Screenshot.png"></p>
 
 ## Project Description
 A java/spark web application that enables Rangers to track wildlife sightings in their area. Following 
@@ -13,7 +13,18 @@ therefore producing critical data that should contribute to the final decision b
 Open the following URL in a browser -  
 
 ## Setup and Installation
+#### Executing the Application
+* Download project zip file.
+* After extraction open folder in a java IDE.
+* Executing App.java should launch the application on your computer's local host.
+* Fetch site url from the IDE terminal and open inside browser.
 
+#### Local Database set-up
+
+## Technologies 
+* Java programming language.
+* Spark - java based micro webframework.
+* Handlebars - templating language.
 
 ## Author
 Brian Juma.
