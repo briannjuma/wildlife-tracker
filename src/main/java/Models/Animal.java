@@ -23,7 +23,16 @@ public abstract class Animal {
             //create object,connect into database,execute query statement,update existing fields,retrieve primary key
             this.id = (int) con.createQuery(sql,true).addParameter("name",this.name).addParameter(type,this.type).executeUpdate().getKey();
         }
-
     }
+    //this is testAnimal object
+    @Override
+    public boolean equals(Object testAnimal) {
+        if(!(testAnimal instanceof Animal)){
+            return false;
+        }
+        Animal newAnimal = (Animal) testAnimal;
+        return this.getName().equals(newAnimal.getName()) && this.getType().equals(newAnimal.getType());
+    }
+
 
 }
