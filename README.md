@@ -42,3 +42,7 @@ Open the following URL in a browser -  https://wildlifetrackerjuma.herokuapp.com
 Brian Juma.
 <br>
 Contact me via email: njengabrianj@gmail.com
+
+## License 
+The project is served under the MIT LICENSE copyright &copy; 2022 jumaBrian.
+View <a href="https://github.com/jumaBrian/wildlife-tracker/blob/master/LICENSE">license.</a>
