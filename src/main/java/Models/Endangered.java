@@ -43,4 +43,18 @@ public class Endangered extends Animal {
         }
     }
 
+    //getter for public id
+    public int getId() {
+        return id;
+    }
+    public static Endangered find(int id) {
+        try (Connection con = DB.sql2o.open()) {
+            String sql = "SELECT * FROM animals where id=:id";
+            Endangered animal = con.createQuery(sql).addParameter("id", id).executeAndFetchFirst(Endangered.class);
+            return animal;
+
+        }
+    }
+
+
 }

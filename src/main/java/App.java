@@ -27,7 +27,7 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "animals.hbs");
         }, new HandlebarsTemplateEngine());
-/*
+
         // display animals on record
         post("/AnimalDetail", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
@@ -59,7 +59,7 @@ public class App {
             model.put("unsafeAnimal",unsafeAnimal);
             return new ModelAndView(model, "allAnimals.hbs");
         }, new HandlebarsTemplateEngine());
-*/
+
         // report sightings form
         get("/sightings-form", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
