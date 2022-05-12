@@ -78,3 +78,6 @@ settings.gradle
 .idea/
 
 !gradle-wrapper.jar
+
+# enviroment variable
+.sdkmanrc
