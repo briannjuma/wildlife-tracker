@@ -38,6 +38,13 @@ Open the following URL in a browser -  https://wildlifetrackerjuma.herokuapp.com
 * Handlebars - UI templating language.
 * Postgress - relational database for application data storage.
 * Maven - build automation.
+
+## Contribution
+This is an open project and so all contributions are welcome.
+* Fork project.
+* Make modification.
+* Submit a pull request for review.
+
 ## Author
 Brian Juma.
 <br>
