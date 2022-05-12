@@ -25,7 +25,7 @@ Open the following URL in a browser -
 * Connect into the database.
   * \c wildlife_tracker;
   * CREATE TABLE animals (id serial PRIMARY KEY, name VARCHAR,type VARCHAR,health VARCHAR, age VARCHAR);
-  * CREATE TABLE sightings (ranger VARCHAR, location VARCHAR,animal_id integer);
+  * CREATE TABLE sightings (ranger VARCHAR, location VARCHAR,animal_id INTEGER);
   * CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
 * Other useful commands:
     * SELECT * FROM animals; - View all animal entries.
@@ -37,7 +37,7 @@ Open the following URL in a browser -
 * Spark - framework to build web interface.
 * Handlebars - UI templating language.
 * Postgress - relational database for application data storage.
-
+* Maven - build automation.
 ## Author
 Brian Juma.
 <br>
