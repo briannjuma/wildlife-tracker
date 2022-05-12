@@ -3,6 +3,8 @@ package Models;
 
 import org.sql2o.Connection;
 
+import java.util.List;
+
 public class Safe extends Animal{
     //fields
     private static final String STATUS = "safe";
@@ -29,4 +31,12 @@ public class Safe extends Animal{
 
         }
     }
+    // Retrieve records
+    public static List<Safe> all() {
+        String sql = "SELECT * FROM animals WHERE type = 'safe'";
+        try(Connection con = DB.sql2o.open()) {
+            return  con.createQuery(sql).throwOnMappingFailure(false).executeAndFetch(Safe.class);
+        }
+    }
+
 }

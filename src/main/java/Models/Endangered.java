@@ -4,6 +4,8 @@ package Models;
 
 import org.sql2o.Connection;
 
+import java.util.List;
+
 public class Endangered extends Animal {
     //fields
     private static final String STATUS = "endangered";
@@ -30,6 +32,14 @@ public class Endangered extends Animal {
         }
         catch (ClassCastException exc){
 
+        }
+    }
+
+    // Retrieve records
+    public static List<Endangered> all() {
+        String sql = "SELECT * FROM animals WHERE type = 'endangered'";
+        try (Connection con = DB.sql2o.open()) {
+            return con.createQuery(sql).throwOnMappingFailure(false).executeAndFetch(Endangered.class);
         }
     }
 
