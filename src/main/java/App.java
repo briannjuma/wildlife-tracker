@@ -86,5 +86,12 @@ public class App {
             return new ModelAndView(model, "displaySighting.hbs");
         }, new HandlebarsTemplateEngine());
 
+        get("/sightingsdisplay", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            List<Sightings>  sightings = Sightings.getAll();
+            model.put("sightings", sightings);
+            return new ModelAndView(model, "displayAll.hbs");
+        }, new HandlebarsTemplateEngine());
+
     }
 }
