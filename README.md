@@ -10,7 +10,7 @@ the Forest Rangers will be able to record and report animal sightings in that ar
 therefore producing critical data that should contribute to the final decision by the Forest Authority.
 
 ## Usage/Live Link
-Open the following URL in a browser -  
+Open the following URL in a browser -  https://wildlifetrackerjuma.herokuapp.com/
 
 ## Setup and Installation
 #### Executing the Application
