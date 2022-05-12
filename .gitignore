@@ -79,5 +79,5 @@ settings.gradle
 
 !gradle-wrapper.jar
 
-# enviroment variable
-.sdkmanrc
+#target files after deployment
+/target
