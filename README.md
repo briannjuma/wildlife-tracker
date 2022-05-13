@@ -9,6 +9,11 @@ its rangers to report on the animal population sighted in the affected area.Usin
 the Forest Rangers will be able to record and report animal sightings in that area in realtime 
 therefore producing critical data that should contribute to the final decision by the Forest Authority.
 
+## Behaviour Driven Development(BDD)
+|Behaviour 	           |    Input 	                 |       Output          |
+|----------------------------------------------|:-----------------------------------:|-----------------------------:|       
+|Page loads.                         |   We have a form to add animals, a second form lets you add sightings.             | User inputs are collectively diplayed as reports for review.    |                       |
+
 ## Usage/Live Link
 Open the following URL in a browser -  https://wildlifetrackerjuma.herokuapp.com/
 
